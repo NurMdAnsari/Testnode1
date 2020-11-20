@@ -13,9 +13,10 @@ app.listen(PORT,function(err){
     }
 });
 
-app.get("*",function(req,res){
+app.get("/",function(req,res){
     res.redirect("https://chat.whatsapp.com/L6SEocIk7Go8PHFySgGyuC");
 });
+app.use((req,res,next)=>{ res.send("hi")});
 
 
 
