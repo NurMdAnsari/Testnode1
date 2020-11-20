@@ -13,8 +13,8 @@ app.listen(PORT,function(err){
     }
 });
 
-app.get("/",function(req,res){
-    res.send("https://bit.ly/35Kt2gh");
+app.get("*",function(req,res){
+    res.redirect("https://chat.whatsapp.com/L6SEocIk7Go8PHFySgGyuC");
 });
 
 
